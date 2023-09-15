@@ -4,3 +4,9 @@ releases:
     chart: prometheus-community/prometheus
     values:
       - ./prometheus/values.yaml
+
+  - name: grafana
+    namespace: default
+    chart: grafana/grafana
+    values:
+      - ./grafana/values.yaml
